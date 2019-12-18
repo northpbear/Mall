@@ -29,6 +29,8 @@
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   }
   .left, .right {
+    text-align: center;
+    margin-top: 6px;
     width: 60px;
   }
   .center {

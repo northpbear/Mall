@@ -26,6 +26,8 @@
     methods: {
       getIndex(index){
         this.actIndex = index;
+        this.$emit('changeTitle', index);
+        console.log(index);
       }
     }
   }
