@@ -145,6 +145,7 @@
       },
       getGoodsData(type, page){
         getGoodsData(type, page).then(res => {
+          // console.log(this.goods[type].data);
           this.goods[type].data.push(...res.data.list);
           this.goods[type].page++;
         })
@@ -167,8 +168,6 @@
     padding-top: 44px;
   }
   .tab-control-home {
-    position: sticky;
-    top: 44px;
     background-color: #fff;
   }
   .wrapper {
@@ -176,6 +175,8 @@
     position: relative;
   }
   .fixed {
+    top: 43px;
+
     position: fixed;
     offset-top: 48px;
     z-index: 1000;

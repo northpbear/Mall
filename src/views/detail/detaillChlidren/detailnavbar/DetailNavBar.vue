@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="detail-nav-bar">
     <nav-bar>
       <template #center>
         <div class="detail-center-inner">
@@ -12,7 +12,7 @@
         </div>
       </template>
       <template #left>
-        <div>
+        <div @click="goBack">
           <img src="@/assets/img/common/back.svg" alt="">
         </div>
       </template>
@@ -39,12 +39,19 @@
       changeActIndex(index){
         this.activeIndex = index;
         console.log(index);
+      },
+      goBack(){
+        this.$router.go(-1);
       }
     }
   }
 </script>
 
 <style scoped>
+  #detail-nav-bar {
+    position: relative;
+    z-index: 10;
+  }
   .detail-center-inner {
     display: flex;
   }
