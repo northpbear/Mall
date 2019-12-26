@@ -7,7 +7,7 @@ import getters from "./getters";
 Vue.use(Vuex)
 
 const state = {
-  goodsList: []
+  goodsList: JSON.parse(localStorage.getItem('cart')) || []
 };
 
 const store = new Vuex.Store({

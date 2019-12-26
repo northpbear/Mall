@@ -145,6 +145,7 @@
       },
       getGoodsData(type, page){
         getGoodsData(type, page).then(res => {
+          console.log(res);
           // console.log(this.goods[type].data);
           this.goods[type].data.push(...res.data.list);
           this.goods[type].page++;

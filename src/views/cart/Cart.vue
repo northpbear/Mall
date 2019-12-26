@@ -27,7 +27,7 @@
         'goodsCountInCart',
         'goodsList'
       ])
-    }
+    },
   }
 </script>
 
